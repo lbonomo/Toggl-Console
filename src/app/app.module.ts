@@ -1,16 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// Necesario para poder utiliar NgForm
+import { FormsModule } from '@angular/forms'
 
-import { AppComponent } from './app.component';
+
+// Components
+import { SettingsComponent } from './components/settings/settings.component';
+
+// Routes
+import { APP_ROUTING } from './app-routes';
+
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        SettingsComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        APP_ROUTING,
+    ],
+    providers: [],
+    bootstrap: [SettingsComponent]
 })
 export class AppModule { }
