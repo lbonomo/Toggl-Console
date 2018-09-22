@@ -1,4 +1,19 @@
 # TogglConsole
+Juangdo con:
+* [Angular](https://angular.io/)
+* [Angular Material](https://material.angular.io/)
+* [Toggl API](https://github.com/toggl/toggl_api_docs) 
+* [Apache Cordova](https://cordova.apache.org/)
+
+## Objetivo
+* Aprender!
+* Comparar etiquetas de Toggl
+
+![dashboard](https://raw.githubusercontent.com/lbonomo/Toggl-Console/master/screenshot/dashboard.png)
+![settings](https://raw.githubusercontent.com/lbonomo/Toggl-Console/master/screenshot/settings.png)
+
+
+## Angular 6
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
