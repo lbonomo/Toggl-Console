@@ -1,48 +1,83 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import {
     MatButtonModule,
+    MatCardModule,
     MatCheckboxModule,
     MatIconModule,
-    MatToolbarModule,
+    MatInputModule,
     MatMenuModule,
-    MatCardModule
- } from '@angular/material';
-
+    MatSidenavModule,
+    MatToolbarModule,
+    // MatAutocompleteModule,
+    // MatBadgeModule,
+    // MatBottomSheetModule,
+    // MatButtonToggleModule,
+    // MatChipsModule,
+    // MatDatepickerModule,
+    // MatDialogModule,
+    // MatDividerModule,
+    // MatExpansionModule,
+    // MatGridListModule,
+    // MatListModule,
+    // MatNativeDateModule,
+    // MatPaginatorModule,
+    // MatProgressBarModule,
+    // MatProgressSpinnerModule,
+    // MatRadioModule,
+    // MatRippleModule,
+    // MatSelectModule,
+    // MatSliderModule,
+    // MatSlideToggleModule,
+    // MatSnackBarModule,
+    // MatSortModule,
+    // MatStepperModule,
+    // MatTableModule,
+    // MatTabsModule,
+    // MatTooltipModule,
+    // MatTreeModule,
+    } from '@angular/material';
 import { NgModule } from '@angular/core';
-// Necesario para poder utiliar NgForm
-import { FormsModule } from '@angular/forms'
 
 // Routes
-import { APP_ROUTING } from './app-routes';
+import { AppRoutingModule } from './app-routes';
+
+// Pipes
 
 // Components
+import { AppComponent }         from './app.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { HeaderComponent } from './components/header/header.component';
+
 
 
 @NgModule({
     declarations: [
+        AppComponent,
         SettingsComponent,
-        DashboardComponent
+        DashboardComponent,
+        HeaderComponent,
+
     ],
     imports: [
+        HttpClientModule,
         BrowserModule,
         FormsModule,
-
+        AppRoutingModule,
         BrowserAnimationsModule,
         MatButtonModule,
         MatCheckboxModule,
         MatIconModule,
         MatToolbarModule,
         MatMenuModule,
-        MatCardModule
-
-
-
-        APP_ROUTING,
+        MatCardModule,
+        MatSidenavModule,
+        MatInputModule,
     ],
     providers: [],
-    bootstrap: [DashboardComponent]
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
