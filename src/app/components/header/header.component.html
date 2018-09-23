@@ -1,6 +1,33 @@
-<mat-toolbar>
-    <div class="button-row">
-        <a mat-flat-button color="primary" routerLink="/dashboard">Dashboard</a>
-        <a mat-flat-button color="warn" routerLink="/settings">Settings</a>
-    </div>
-</mat-toolbar>
+<header>
+
+    <mat-toolbar color="primary">
+        
+        <mat-icon>pie_chart</mat-icon>
+        <span class="title">Toggl Console</span>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="text-right">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+
+        <mat-menu #menu="matMenu">
+            <!-- https://material.io/tools/icons/?style=baseline -->
+            <button mat-menu-item routerLink="/dashboard">
+                <mat-icon>home</mat-icon>
+                <span>Dashboard</span>
+            </button>
+        
+            <button mat-menu-item routerLink="/settings">
+                <mat-icon>settings</mat-icon>
+                <span>Settings</span>
+            </button>
+
+        </mat-menu>
+
+    </mat-toolbar>
+
+</header>
+
+
+
+
+      

@@ -1,22 +1,18 @@
 <div class="container">
     <h1>Dashboard</h1>
-    <div class="content">
+    <div class="container">
+        <div *ngIf="tags_ids">
+            <ul *ngFor="let tag of tags_ids">
+                <li>{{ tag.id }} / {{ tag.name }} / {{ tag.time }} </li>
+            </ul>       
+        </div>
     </div>
 </div>
 
-<div *ngIf="tags_ids">
 
-    <ul *ngFor="let tag of tags_ids">
-        <li>{{ tag.id }} / {{ tag.name }} / {{ tag.time }} </li>
-    </ul>
-    
-    
-    <span class="done" >
-        <button mat-fab (click)="getTagsIDs()">
-            <mat-icon>update circle</mat-icon>
-        </button>
-    </span>
-
-</div>
-
-
+<!-- Botoncito al final de la pagina -->
+<span class="done" >
+    <button mat-fab (click)="getTagsIDs()">
+        <mat-icon>update circle</mat-icon>
+    </button>
+</span>

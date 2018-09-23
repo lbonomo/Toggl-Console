@@ -1,11 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-/* fallback */
-/* @font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(://assets/fonts/Material-Icons.woff2) format('woff2');
-} */
+
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 /* @import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; */
@@ -48,11 +42,7 @@ mat-toolbar-row {
   background: #eee;
 }
 
-.container {
-    margin: 0.5rem;
-}
-
-.container h1 {
+h1 {
     text-align: center;
     font-size: 1.4rem;
     color: #7d7d7d;
@@ -60,4 +50,14 @@ mat-toolbar-row {
 
 .content {
     color: #8f8f8f;
+}
+
+header {
+  margin-bottom: 1.2rem;
+}
+
+header .title {
+  padding-left: 1rem;
+  width: 100%;
+
 }
