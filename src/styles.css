@@ -11,6 +11,18 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.mat-toolbar.mat-primary {
+
+  background: #5c8bab;
+  color: #fff;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+
 mat-card {
   max-width: 80%;
   margin: 2em auto;
@@ -20,6 +32,14 @@ mat-card {
 mat-toolbar-row {
   justify-content: space-between;
 }
+
+header {
+  margin-bottom: 1.2rem;
+}
+
+header .title {
+  padding-left: 1rem;
+ }
 
 .done {
   position: fixed;
@@ -52,18 +72,15 @@ h1 {
     color: #8f8f8f;
 }
 
-header {
-  margin-bottom: 1.2rem;
-}
 
-header .title {
-  padding-left: 1rem;
-  width: 100%;
-
-}
 
 
 button:focus {
   outline: none;
   outline: none -webkit-focus-ring-color;
+}
+
+#pieChart{
+  max-width: 100%;
+  min-height: 300px;
 }

@@ -1,4 +1,6 @@
 # TogglConsole
+![dashboard](https://raw.githubusercontent.com/lbonomo/Toggl-Console/master/src/assets/img/icon.svg)
+
 Juangdo con:
 * [Angular](https://angular.io/)
 * [Angular Material](https://material.angular.io/)

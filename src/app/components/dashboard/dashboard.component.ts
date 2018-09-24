@@ -19,7 +19,23 @@ export class DashboardComponent implements OnInit, OnDestroy {
     public pieChartData:number[] = [];
     public pieChartType:string = 'pie';
     public pieChartLegend:boolean = true;
-    public pieChartOptions: any = { legend: { position: 'bottom' } }
+    public pieChartOptions: any = {        
+        responsive: true,
+        cutoutPercentage: 40,
+        rotation: 1,
+        legend: { 
+            position: 'bottom',
+            display: true,
+            fullWidth: true, 
+            reverse: false,
+            // hidden: true,
+            labels: {
+                // fontColor: 'rgb(255, 99, 132)',
+                fontSize: 10,
+                boxWidth: 10,
+            }
+        }
+    }
 
     constructor(public _toggl:TogglService, private config:LocalstorageService ) {
         config.GetConfig();
