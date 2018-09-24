@@ -10,8 +10,8 @@ Juangdo con:
 * Comparar etiquetas de Toggl
 
 ![dashboard](https://raw.githubusercontent.com/lbonomo/Toggl-Console/master/screenshot/dashboard.png)
+![menu](https://raw.githubusercontent.com/lbonomo/Toggl-Console/master/screenshot/menu.png)
 ![settings](https://raw.githubusercontent.com/lbonomo/Toggl-Console/master/screenshot/settings.png)
-
 
 ## Angular 6
 

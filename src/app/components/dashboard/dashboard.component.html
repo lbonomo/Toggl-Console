@@ -1,10 +1,29 @@
-<div class="container">
+<div class="container dashboard">
     <h1>Dashboard</h1>
-    <div class="container">
-        <div *ngIf="tags_ids">
-            <ul *ngFor="let tag of tags_ids">
+    <div class="row">
+        
+        <div *ngIf="tags_ids" class="col-12">
+
+            <!-- <ul *ngFor="let tag of tags_ids">
                 <li>{{ tag.id }} / {{ tag.name }} / {{ tag.time }} </li>
-            </ul>       
+            </ul> -->
+
+            <div *ngIf="pieChartEnabled" class="container-fluid" id="pieChart">
+
+                <canvas baseChart
+                    height="95%" 
+                    width="100%"
+                    [options]="pieChartOptions"
+                    [legend]="pieChartLegend"
+                    [data]="pieChartData"
+                    [labels]="pieChartLabels"
+                    [chartType]="pieChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)">
+                </canvas>
+            
+            </div>
+
         </div>
     </div>
 </div>

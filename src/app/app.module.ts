@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 // Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {
@@ -48,12 +49,16 @@ import { AppRoutingModule } from './app-routes';
 // Pipes
 
 // Components
-import { AppComponent }         from './app.component';
+import { AppComponent } from './app.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 
-
+// Graph 
+// http://www.chartjs.org/
+// https://valor-software.com/ng2-charts/
+// https://www.npmjs.com/package/ng2-charts
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 @NgModule({
     declarations: [
@@ -61,7 +66,6 @@ import { HeaderComponent } from './components/header/header.component';
         SettingsComponent,
         DashboardComponent,
         HeaderComponent,
-
     ],
     imports: [
         HttpClientModule,
@@ -77,6 +81,7 @@ import { HeaderComponent } from './components/header/header.component';
         MatCardModule,
         MatSidenavModule,
         MatInputModule,
+        ChartsModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

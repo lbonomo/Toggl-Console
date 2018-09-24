@@ -27,7 +27,11 @@ export class TogglService {
         ].join(':');
     }
         
-
+    milliseconds_to_float_hours(time) {
+        let hours:number = Math.round(time/(1000*60*60))
+        return hours
+    }
+        
 
     last_month() {
         let now = new Date();
